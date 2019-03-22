@@ -1,9 +1,9 @@
 import json
 from flask import Flask, g
-from cookiespool.config import *
-from cookiespool.db import *
+from config import *
+from db import *
 
-__all__ = ['app']
+# __all__ = ['app']
 
 app = Flask(__name__)
 
@@ -62,4 +62,4 @@ def count(website):
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0')
+    app.run(host=API_HOST)
