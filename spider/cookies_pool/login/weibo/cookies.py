@@ -248,5 +248,9 @@ class WeiboCookies():
 
 if __name__ == '__main__':
     brower = webdriver.Chrome()
-    result = WeiboCookies('13716441094', 'hyh5821012',brower).main()
+    #填上自己的用户名
+    user_name = ''
+    #填上自己的密码
+    password = ''
+    result = WeiboCookies(user_name,password,brower).main()
     print(result)
